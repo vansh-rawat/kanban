@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    /* Set the page background color to grey */
+}
+
+.app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.board {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -16px;
+    background-color: white;
+    /* Set background color for all columns */
+}
+
+.board>div {
+    flex: 0 0 calc(33.33% - 32px);
+    margin: 0 16px;
+    background-color: grey;
+    /* Set background color for individual columns */
+    padding: 10px;
+    /* Add padding for better visual separation */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 8px;
+    padding: 16px;
+    width: 200px;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    h3 {
+        margin-top: 0;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.priority {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.priority-4 {
+    background-color: #ff4d4f;
+    color: #fff;
+}
+
+.priority-3 {
+    background-color: #fa8c16;
+    color: #fff;
+}
+
+.priority-2 {
+    background-color: #ffec3d;
+}
+
+.priority-1 {
+    background-color: #73d13d;
+    color: #fff;
+}
+
+.display-options {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    /* Grey background color for options */
+    padding: 10px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+}
+
+/* Adjust styling for labels */
+label {
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+/* Adjust styling for select elements */
+select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
